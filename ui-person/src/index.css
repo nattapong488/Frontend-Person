@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  background-color: cornflowerblue;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main {
+  max-width: 1200px;
+  min-height:  90vh;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #000;
+}
