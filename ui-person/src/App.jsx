@@ -13,9 +13,9 @@ function App() {
     setData(newData);
   }
 
-  // useEffect(() => {
-  //   getPersonList();
-  // }, []);
+  useEffect(() => {
+    getPersonList();
+  }, []);
 
   async function getPersonList() {
     try {
@@ -32,7 +32,7 @@ function App() {
     }
   }
   return (
-    <div className="app">
+    <div className="app-container">
       <Header title="Person List" />
       <main>
         <PersonList PersonList={data} deleteUser={deleteUser} />
