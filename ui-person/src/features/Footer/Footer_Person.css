@@ -1,0 +1,51 @@
+/* การตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* สไตล์สำหรับ Footer */
+.footer {
+    background-color: #333; /* สีพื้นหลัง */
+    color: #fff; /* สีข้อความ */
+    padding: 20px 0; /* ระยะห่างด้านใน (บน-ล่าง) */
+    text-align: center; /* จัดกึ่งกลางข้อความ */
+}
+
+.footer-container {
+    max-width: 1200px; /* ความกว้างสูงสุด */
+    margin: 0 auto; /* จัดกึ่งกลางคอนเทนเนอร์ */
+    padding: 0 20px; /* ระยะห่างด้านใน (ซ้าย-ขวา) */
+}
+
+.copyright {
+    margin-bottom: 10px; /* ระยะห่างด้านล่างสำหรับข้อความลิขสิทธิ์ */
+}
+
+.social-links {
+    margin-top: 10px; /* ระยะห่างด้านบนสำหรับลิงก์โซเชียล */
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none; /* ลบขีดเส้นใต้ลิงก์ */
+    margin: 0 10px; /* ระยะห่างระหว่างลิงก์ */
+    transition: color 0.3s ease; /* ทำให้การเปลี่ยนสีดูนุ่มนวล */
+}
+
+.social-link:hover {
+    color: #ddd; /* เปลี่ยนสีเมื่อนำเมาส์ไปชี้ */
+}
+
+/* Media Queries สำหรับการทำให้ Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* จัดองค์ประกอบให้อยู่ในแนวตั้ง */
+        text-align: center; /* จัดกึ่งกลางข้อความ */
+    }
+
+    .social-links {
+        margin-top: 15px;
+    }
+}

@@ -14,8 +14,20 @@ button {
 }
 main {
   max-width: 1200px;
-  min-height:  90vh;
+  /* min-height:  90vh; */ /* Remove this line */
   margin: auto;
   padding: 10px;
   border: 1px solid #000;
+  flex-grow: 1; /* 4. (หัวใจสำคัญ) สั่งให้ main ยืดขยายเพื่อเติมพื้นที่ว่างที่เหลือทั้งหมด */
+}
+
+/* ทำให้ body และ html สูงเต็มจอและไม่มี margin/padding ที่ไม่ต้องการ */
+html, body, #root {
+  height: 100%;
+}
+
+.app-container {
+  display: flex; /* 1. สั่งให้เป็น Flex Container */
+  flex-direction: column; /* 2. จัดเรียงสมาชิกในแนวตั้ง (บนลงล่าง) */
+  min-height: 100vh; /* 3. กำหนดความสูงขั้นต่ำให้เท่ากับความสูงของหน้าจอพอดี */
 }

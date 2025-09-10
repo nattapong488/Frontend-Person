@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header.jsx";
 import PersonList from "./components/PersonList/PersonList.jsx";
+import Footer_Person from "./features/Footer/Footer_Person.jsx"; 
 import { useState, useEffect, use } from "react";
 import "./App.css";
 
@@ -31,11 +32,12 @@ function App() {
     }
   }
   return (
-    <div className="app">
+    <div className="app-container">
       <Header title="Person List" />
       <main>
         <PersonList PersonList={data} deleteUser={deleteUser} />
       </main>
+      <Footer_Person />
     </div>
   );
 }
